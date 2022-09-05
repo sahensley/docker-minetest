@@ -42,6 +42,7 @@ RUN \
     mesa-dev \
     ncurses-dev \
     openal-soft-dev \
+    postgresql-dev \
     python3-dev \
     sqlite-dev \
     zstd-dev && \
@@ -56,6 +57,8 @@ RUN \
     libstdc++ \
     luajit \
     lua-socket \
+    postgresql-libs \
+    postgresql-client \
     sqlite \
     sqlite-libs \
     zstd \
@@ -106,6 +109,7 @@ RUN \
     -DENABLE_GETTEXT=0 \
     -DENABLE_LEVELDB=1 \
     -DENABLE_LUAJIT=1 \
+    -DENABLE_POSTGRESQL=1 \
     -DENABLE_REDIS=1 \
     -DENABLE_SOUND=0 \
     -DENABLE_SYSTEM_GMP=1 \
